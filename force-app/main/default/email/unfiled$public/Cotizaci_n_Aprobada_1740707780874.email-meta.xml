@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Avisa al propietario de la Opootunidad, que la Cotización ya fue aprobada.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Cotización Aprobada</name>
+    <relatedEntityType>Cotizaci_n__c</relatedEntityType>
+    <style>none</style>
+    <subject>Cotización con Folio: {{{Cotizaci_n__c.Name}}},ha sido Aprobada</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

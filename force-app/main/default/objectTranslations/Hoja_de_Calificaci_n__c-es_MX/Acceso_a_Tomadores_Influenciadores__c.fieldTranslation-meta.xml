@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- ¿Conocemos las personas que toman e influencian la decisión  dentro del proceso? Sea: 1. Ninguno. 2. Casi Ninguno. 3. Parcialmente. 4. Casi Todos. 5. Todos. --></help>
+    <label><!-- Acceso a Influenciadores --></label>
+    <name>Acceso_a_Tomadores_Influenciadores__c</name>
+</CustomFieldTranslation>

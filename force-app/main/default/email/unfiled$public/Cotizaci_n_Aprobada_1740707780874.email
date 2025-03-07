@@ -1,0 +1,7 @@
+<html>
+ <head>
+  <title></title>
+ </head>
+ <body style="height: auto; min-height: auto;"><br /> <img alt="logoTh" src="{[devName:logoTh]}" style="max-width: 1115.3237731933593px" title="logoTh" /><br /> <br /> <br /> Se le informa que la Cotización:<br /> <br /> Con Folio:&nbsp;{{{Cotizaci_n__c.Name}}}<br /> <br /> De la Oportunidad:&nbsp;{{{Cotizaci_n__c.Nombre_del_Proyecto__c}}}<br /> <br /> De la Cuenta:&nbsp;{{{Cotizaci_n__c.Opportunity__c}}}<br /> <br /> <br /> Ha sido&nbsp;{{{Cotizaci_n__c.Estado_Cotizaci_n__c}}}. Puede continuar con el proceso correspondiente para su sincronización y avance de la Oportunidad.<br /> <br /> Consulte los detalles del registro aquí:<br /> <br /> Cotización: https://grupothermoandinasf--dev.sandbox.my.salesforce.com/{{{Cotizaci_n__c.Id}}}<br /> <br /> <br /> <img alt="pieDePáginaTh" src="{[devName:pieDePginaTh]}" style="max-width: 1115.3237731933593px" title="pieDePáginaTh" />
+ </body>
+</html>

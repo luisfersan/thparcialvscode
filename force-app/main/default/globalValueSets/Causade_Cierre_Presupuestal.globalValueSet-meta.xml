@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Cliente Desiste del Proyecto</fullName>
+        <default>false</default>
+        <label>Cliente Desiste del Proyecto</label>
+    </customValue>
+    <customValue>
+        <fullName>Cliente Pierde la Oportunidad</fullName>
+        <default>false</default>
+        <label>Cliente Pierde la Oportunidad</label>
+    </customValue>
+    <customValue>
+        <fullName>Priorización</fullName>
+        <default>false</default>
+        <label>Priorización</label>
+    </customValue>
+    <customValue>
+        <fullName>Falta de Información</fullName>
+        <default>false</default>
+        <label>Falta de Información</label>
+    </customValue>
+    <customValue>
+        <fullName>Descartada</fullName>
+        <default>false</default>
+        <label>Descartada</label>
+    </customValue>
+    <masterLabel>Causa de Cierre Presupuestal</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

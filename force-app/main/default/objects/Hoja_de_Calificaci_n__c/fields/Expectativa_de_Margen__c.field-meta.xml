@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expectativa_de_Margen__c</fullName>
+    <inlineHelpText>¿Cuál es la orientación del cliente para la toma de decisiones? Sea: 1. Sólo Precio. 2. Más Precio que Calidad. 3. 50/50. 4. Más Calidad que Precio. 5. Calidad.</inlineHelpText>
+    <label>Expectativa de Margen</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>ScoringHojasCalculo</valueSetName>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- ¿Hay personas dentro de la toma de decisión que puedan ser un contrapeso para la empresa? Sea: 1. Todos. 2. Casi Todos. 3. Parcialmente. 4. Casi Ninguno. 5. Ninguno. --></help>
+    <label><!-- Influenciadores Adversos --></label>
+    <name>Tomadores_Iinfliuenciadores_Adversos__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nuevo_Contacto</fullName>
+    <active>false</active>
+    <description>Reglas para crear un nuevo contacto</description>
+    <errorConditionFormula>OR( ISBLANK( FirstName ), ISBLANK(  LastName ), ISBLANK(  Cargo_de_Contacto__c ), ISBLANK(  Tel_fono_de_Contacto__c ), ISBLANK(  Correo_Electr_nico_de_Contacto__c ))</errorConditionFormula>
+    <errorMessage>Debe diligenciar los siguientes campos para crear un contacto nuevo: Nombre, Apellido, Cargo del Contacto, Teléfono de Contacto y Correo Electrónico de Contacto.</errorMessage>
+</ValidationRule>

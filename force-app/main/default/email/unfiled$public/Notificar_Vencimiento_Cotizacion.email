@@ -1,0 +1,6 @@
+Cordial saludo,
+
+A continuación se notifica que la Cotización {!Cotizaci_n__c.Name} con Fecha de Creación {!Cotizaci_n__c.CreatedDate} y Vigencia {!Cotizaci_n__c.Vigencia__c} acaba de caducar. 
+Para dirigirse a la Cotización mencionada, por favor ingresar al siguiente enlace: {!Cotizaci_n__c.Link}
+
+Muchas gracias.

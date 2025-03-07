@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Calificaci_n_de_Cliente__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Puntuaci_n_Conocimiento_del_Cliente__c  = &quot;No Recomendado&quot; ||  Puntuaci_n_Historial_Crediticio__c = &quot;No Recomendado&quot; ||  Puntuaci_n_Situaci_n_Endeudamiento__c = &quot;Crítico&quot;, &quot;No Recomendado&quot;, &quot;Recomendado&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Calificación de Cliente</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

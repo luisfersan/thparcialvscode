@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consecutivos_EstadosOP_Compra</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISCHANGED(StageName) ,OR(AND(
+ISPICKVAL(StageName, &quot;Calificada Compra&quot;),
+NOT(ISPICKVAL(PRIORVALUE(StageName), &quot;Identificada Compra&quot;))
+),AND(
+ISPICKVAL(StageName, &quot;Generada Compra&quot;),
+NOT(ISPICKVAL(PRIORVALUE(StageName), &quot;Calificada Compra&quot;))
+),AND(
+ISPICKVAL(StageName, &quot;Ofertada Compra&quot;),
+NOT(ISPICKVAL(PRIORVALUE(StageName), &quot;Generada Compra&quot;))
+),AND(
+ISPICKVAL(StageName, &quot;Pre Cierre&quot;),
+NOT(ISPICKVAL(PRIORVALUE(StageName), &quot;Ofertada Compra&quot;))
+),AND(
+ISPICKVAL(StageName, &quot;Adjudicada - Compra&quot;),
+NOT(ISPICKVAL(PRIORVALUE(StageName), &quot;Pre Cierre&quot;)))))</errorConditionFormula>
+    <errorMessage>No es posible saltarse etapas en el proceso de la oportunidad. Por favor, avance en las dichas etapas de manera secuencial.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validacion_Perdida_Compra</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR( ISPICKVAL( Tipo_de_Cierre_Compra__c , &quot;&quot;),  ISPICKVAL(  Causa_de_Cierre_Compra__c , &quot;&quot;), ISBLANK( Observaciones_Cierre_Compra__c )   ), ISPICKVAL( StageName , &quot;Perdida - Compra&quot;) )</errorConditionFormula>
+    <errorMessage>Por favor diligencie todos los campos de la sección &quot;Oportunidad Perdida&quot; para poder continuar con el proceso.</errorMessage>
+</ValidationRule>

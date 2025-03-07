@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Proyecto Nuevo</fullName>
+        <default>false</default>
+        <label>Proyecto Nuevo</label>
+    </customValue>
+    <customValue>
+        <fullName>Mantenimiento</fullName>
+        <default>false</default>
+        <label>Mantenimiento</label>
+    </customValue>
+    <customValue>
+        <fullName>Recambio Tecnológico</fullName>
+        <default>false</default>
+        <label>Recambio Tecnológico</label>
+    </customValue>
+    <customValue>
+        <fullName>Renting</fullName>
+        <default>false</default>
+        <label>Renting</label>
+    </customValue>
+    <customValue>
+        <fullName>Diagnóstico de Falla</fullName>
+        <default>false</default>
+        <label>Diagnóstico de Falla</label>
+    </customValue>
+    <customValue>
+        <fullName>Diagnostico de Falla</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Diagnostico de Falla</label>
+    </customValue>
+    <customValue>
+        <fullName>Recambio Tecnologico</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Recambio Tecnologico</label>
+    </customValue>
+    <masterLabel>Tipo de Solución Requerida</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

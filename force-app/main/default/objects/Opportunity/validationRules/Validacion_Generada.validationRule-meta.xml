@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validacion_Generada</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR( ISPICKVAL( Tipo_de_Oferta__c , &quot;&quot;), AND(NOT( Planos__c ), NOT( Especificaciones__c ), NOT( Pliegos_Condiciones__c ), NOT( Cuadro_de_tems__c ), NOT( Informe_Levantamiento_de_Requerimientos__c )) ),OR( ISPICKVAL( StageName , &quot;Generada Presupuestal&quot;),ISPICKVAL( StageName , &quot;Generada Compra&quot;)  ))</errorConditionFormula>
+    <errorMessage>Por favor diligencie todos los campos de la Sección &quot;Tipo de Oferta&quot; para poder continuar con el proceso.</errorMessage>
+</ValidationRule>

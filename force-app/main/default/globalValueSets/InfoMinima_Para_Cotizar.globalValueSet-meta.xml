@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Planos</fullName>
+        <default>false</default>
+        <label>Planos</label>
+    </customValue>
+    <customValue>
+        <fullName>Especificaciones</fullName>
+        <default>false</default>
+        <label>Especificaciones</label>
+    </customValue>
+    <customValue>
+        <fullName>Pliegos/Condiciones</fullName>
+        <default>false</default>
+        <label>Pliegos/Condiciones</label>
+    </customValue>
+    <customValue>
+        <fullName>Cuadro de Ítems</fullName>
+        <default>false</default>
+        <label>Cuadro de Ítems</label>
+    </customValue>
+    <customValue>
+        <fullName>Informe de Levantamiento de Requerimientos</fullName>
+        <default>false</default>
+        <label>Informe de Levantamiento de Requerimientos</label>
+    </customValue>
+    <masterLabel>InfoMinima Para Cotizar</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

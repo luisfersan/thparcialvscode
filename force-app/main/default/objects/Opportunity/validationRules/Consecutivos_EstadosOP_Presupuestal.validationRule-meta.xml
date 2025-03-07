@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consecutivos_EstadosOP_Presupuestal</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISCHANGED(StageName) ,OR(AND(
+    ISPICKVAL(StageName, &quot;Calificada Presupuestal&quot;),
+    NOT(ISPICKVAL(PRIORVALUE(StageName), &quot;Identificada Presupuestal&quot;))
+),AND(
+    ISPICKVAL(StageName, &quot;Generada Presupuestal&quot;),
+    NOT(ISPICKVAL(PRIORVALUE(StageName), &quot;Calificada Presupuestal&quot;))
+),AND(
+    ISPICKVAL(StageName, &quot;Ofertada Presupuestal&quot;),
+    NOT(ISPICKVAL(PRIORVALUE(StageName), &quot;Generada Presupuestal&quot;))
+),AND(
+    ISPICKVAL(StageName, &quot;Adjudicada - Presupuestal&quot;),
+    NOT(ISPICKVAL(PRIORVALUE(StageName), &quot;Ofertada Presupuestal&quot;))
+)))</errorConditionFormula>
+    <errorMessage>No es posible saltarse etapas en el proceso de la oportunidad. Por favor, avance en las dichas etapas de manera secuencial.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validacion_PreCierre</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( OR(ISPICKVAL( Compromisos_de_Negociaci_n__c , &quot;&quot;),  ISBLANK( Observaciones_Compromisos_de_Negociaci_n__c ))  , ISPICKVAL( StageName , &quot;Pre Cierre&quot;) )</errorConditionFormula>
+    <errorMessage>Por favor diligencie los campos de la Sección &quot;Compromisos de Negociación&quot; para poder continuar con el proceso.</errorMessage>
+</ValidationRule>

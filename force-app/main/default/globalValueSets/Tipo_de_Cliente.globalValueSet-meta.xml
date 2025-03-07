@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Intermediario</fullName>
+        <default>false</default>
+        <label>Intermediario</label>
+    </customValue>
+    <customValue>
+        <fullName>Cliente Final</fullName>
+        <default>false</default>
+        <label>Cliente Final</label>
+    </customValue>
+    <masterLabel>Tipo de Cliente</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

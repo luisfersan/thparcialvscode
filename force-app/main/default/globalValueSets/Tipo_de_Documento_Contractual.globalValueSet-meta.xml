@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Contrato Nuevo</fullName>
+        <default>false</default>
+        <label>Contrato Nuevo</label>
+    </customValue>
+    <customValue>
+        <fullName>OC/OT/OS</fullName>
+        <default>false</default>
+        <label>OC/OT/OS</label>
+    </customValue>
+    <customValue>
+        <fullName>Control de Cambios</fullName>
+        <default>false</default>
+        <label>Control de Cambios</label>
+    </customValue>
+    <masterLabel>Tipo de Documento Contractual</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

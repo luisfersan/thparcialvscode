@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Aprobado_ContratoNuevo</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL( Tipo_de_Documento_Contractual__c , &quot;Contrato Nuevo&quot;) ,OR( ISPICKVAL( Modalidad_del_Contrato__c , &quot;&quot;), ISPICKVAL( Mantenimiento_Inclu_do__c , &quot;&quot;),  NOT( Cumple_Golden_Rules__c )   ), ISPICKVAL( Status , &quot;Aprobado&quot;) )</errorConditionFormula>
+    <errorMessage>Por favor diligencia los siguientes campos para proceder con el Contrato Nuevo: Cumple Golden Rules, Modalidad de Contrato y Mantenimiento Incluido.</errorMessage>
+</ValidationRule>

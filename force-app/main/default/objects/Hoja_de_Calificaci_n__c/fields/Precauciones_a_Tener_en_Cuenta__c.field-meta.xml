@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Precauciones_a_Tener_en_Cuenta__c</fullName>
+    <inlineHelpText>Si la oferta sale calificada con advertencia, ¿Cuáles son las precauciones a tener en cuenta, y cuales son los obstáculos a vencer?</inlineHelpText>
+    <label>Precauciones a Tener en Cuenta</label>
+    <length>1000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>4</visibleLines>
+</CustomField>

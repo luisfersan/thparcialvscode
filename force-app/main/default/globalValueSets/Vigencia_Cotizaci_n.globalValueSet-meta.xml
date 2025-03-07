@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>15 Días</fullName>
+        <default>false</default>
+        <label>15 Días</label>
+    </customValue>
+    <customValue>
+        <fullName>30 Días</fullName>
+        <default>false</default>
+        <label>30 Días</label>
+    </customValue>
+    <customValue>
+        <fullName>60 Días</fullName>
+        <default>false</default>
+        <label>60 Días</label>
+    </customValue>
+    <customValue>
+        <fullName>90 Días</fullName>
+        <default>false</default>
+        <label>90 Días</label>
+    </customValue>
+    <customValue>
+        <fullName>120 Días</fullName>
+        <default>false</default>
+        <label>120 Días</label>
+    </customValue>
+    <customValue>
+        <fullName>150 Días</fullName>
+        <default>false</default>
+        <label>150 Días</label>
+    </customValue>
+    <customValue>
+        <fullName>180 Días</fullName>
+        <default>false</default>
+        <label>180 Días</label>
+    </customValue>
+    <masterLabel>Vigencia Cotización</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

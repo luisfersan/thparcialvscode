@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validacion_ContratoActivo</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR(Contador_Contratos_Aprobados__c &lt; 1, ISBLANK(Contador_Contratos_Aprobados__c ) ), ISPICKVAL( StageName , &quot;Adjudicada - Compra&quot;) )</errorConditionFormula>
+    <errorMessage>Por favor verifique que existe un Contrato Activo para poder continuar con el proceso.</errorMessage>
+</ValidationRule>

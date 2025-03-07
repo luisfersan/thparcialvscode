@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ForecastingType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <amount>true</amount>
+    <dateType>0</dateType>
+    <developerName>ForecastPrueba</developerName>
+    <forecastingGroupDeveloperName>Mercado_Vertical_ForecastPrueba</forecastingGroupDeveloperName>
+    <hasCustomGroup>true</hasCustomGroup>
+    <hasProductFamily>false</hasProductFamily>
+    <masterLabel>ForecastPrueba</masterLabel>
+    <quantity>false</quantity>
+    <roleType>R</roleType>
+</ForecastingType>

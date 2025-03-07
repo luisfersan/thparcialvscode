@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validacion_Adjudicada_Compra</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR( ISPICKVAL( Documento_de_Aprobaci_n__c , &quot;&quot;),NOT( Env_o_de_Contrato__c ),  ISBLANK( Observaciones_Aprobaci_n__c )  ), ISPICKVAL( StageName , &quot;Adjudicada - Compra&quot;) )</errorConditionFormula>
+    <errorMessage>Por favor diligencie todos los campos de la Sección &quot;Oportunidad Adjudicada&quot; para poder continuar con el proceso.</errorMessage>
+</ValidationRule>

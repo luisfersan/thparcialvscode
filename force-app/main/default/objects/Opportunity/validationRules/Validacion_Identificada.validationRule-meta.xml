@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validacion_Identificada</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR( ISPICKVAL( Mercado_Vertical__c , &quot;&quot;),  ISBLANK( Account.Name ),  ISBLANK( Name ),  ISPICKVAL( Departamento_Ejecuci_n_Proyecto__c , &quot;&quot;),  ISPICKVAL( Municipio_Ejecuci_n_Proyecto__c , &quot;&quot;),  ISBLANK( Descripci_n_Detallada__c ),  ISPICKVAL( C_mo_Conoci_Thermoandina__c , &quot;&quot;)       ),OR( ISPICKVAL( StageName , &quot;Identificada Presupuestal&quot;),ISPICKVAL( StageName , &quot;Identificada Compra&quot;)  ))</errorConditionFormula>
+    <errorMessage>Por favor diligencie todos los campos en la sección de &quot;Información General&quot; para poder continuar con el proceso.</errorMessage>
+</ValidationRule>

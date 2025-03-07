@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Identificada Presupuestal</fullName>
+        <default>false</default>
+        <label>Identificada Presupuestal</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Identificada Compra</fullName>
+        <default>false</default>
+        <label>Identificada Compra</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>5</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Calificada Presupuestal</fullName>
+        <default>false</default>
+        <label>Calificada Presupuestal</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Calificada Compra</fullName>
+        <default>false</default>
+        <label>Calificada Compra</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Generada Presupuestal</fullName>
+        <default>false</default>
+        <label>Generada Presupuestal</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>20</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Generada Compra</fullName>
+        <default>false</default>
+        <label>Generada Compra</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>20</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Ofertada Presupuestal</fullName>
+        <default>false</default>
+        <label>Ofertada Presupuestal</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>30</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Ofertada Compra</fullName>
+        <default>false</default>
+        <label>Ofertada Compra</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>40</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Pre Cierre</fullName>
+        <default>false</default>
+        <label>Pre Cierre</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>80</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Adjudicada - Compra</fullName>
+        <default>false</default>
+        <label>Adjudicada - Compra</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>true</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Perdida - Compra</fullName>
+        <default>false</default>
+        <label>Perdida - Compra</label>
+        <closed>true</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>100</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Adjudicada - Presupuestal</fullName>
+        <default>false</default>
+        <label>Adjudicada - Presupuestal</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>true</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Perdida - Presupuestal</fullName>
+        <default>false</default>
+        <label>Perdida - Presupuestal</label>
+        <closed>true</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>100</probability>
+        <won>false</won>
+    </standardValue>
+</StandardValueSet>

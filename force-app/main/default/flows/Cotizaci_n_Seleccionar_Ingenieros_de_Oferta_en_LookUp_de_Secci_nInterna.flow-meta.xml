@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Se_Seleccion_el</name>
+        <label>Elección de Ingeniero de Ofertas</label>
+        <locationX>314</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Luis_Figueroa</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Ingeniero_de_Ofertas__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Luis Figueroa</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Seleccionar_a_Luis_en_el_LookUp_de_Usuarios</targetReference>
+            </connector>
+            <label>Luis Figueroa</label>
+        </rules>
+        <rules>
+            <name>Neyith_Suarez</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Ingeniero_de_Ofertas__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Neyith Suarez</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Copy_1_of_Seleccionar_a_Luis_en_el_LookUp_de_Usuarios</targetReference>
+            </connector>
+            <label>Neyith Suarez</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Cotización: Seleccionar Ingenieros de Oferta en LookUp de SecciónInterna {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Cotización: Seleccionar Ingenieros de Oferta en LookUp de SecciónInterna</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Copy_1_of_Seleccionar_a_Luis_en_el_LookUp_de_Usuarios</name>
+        <label>Seleccionar a Neyith en el LookUp de Usuarios</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Usuarios__c</field>
+            <value>
+                <stringValue>005Hn00000IWYBnIAP</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Seleccionar_a_Luis_en_el_LookUp_de_Usuarios</name>
+        <label>Seleccionar a Luis en el LookUp de Usuarios</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Usuarios__c</field>
+            <value>
+                <stringValue>005Hn00000IWYBpIAP</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Se_Seleccion_el</targetReference>
+        </connector>
+        <object>Cotizaci_n__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

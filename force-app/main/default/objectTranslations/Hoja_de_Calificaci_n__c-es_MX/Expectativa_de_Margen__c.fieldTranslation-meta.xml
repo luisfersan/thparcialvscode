@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- ¿Cuál es la orientación del cliente para la toma de decisiones? Sea: 1. Sólo Precio. 2. Más Precio que Calidad. 3. 50/50. 4. Más Calidad que Precio. 5. Calidad. --></help>
+    <label><!-- Expectativa de Margen --></label>
+    <name>Expectativa_de_Margen__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Luis Figueroa</fullName>
+        <default>false</default>
+        <label>Luis Figueroa</label>
+    </customValue>
+    <customValue>
+        <fullName>Neyith Suarez</fullName>
+        <default>false</default>
+        <label>Neyith Suarez</label>
+    </customValue>
+    <masterLabel>Ingenieros de Ofertas</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

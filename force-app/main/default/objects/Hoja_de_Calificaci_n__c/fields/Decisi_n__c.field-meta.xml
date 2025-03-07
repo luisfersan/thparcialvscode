@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Decisi_n__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Calificaci_n_de_Oportunidad__c &gt;=85, &quot;CALIFICADA CON PRIORIDAD&quot;,  IF(Calificaci_n_de_Oportunidad__c&lt;85 &amp;&amp; Calificaci_n_de_Oportunidad__c &gt;=70 , &quot;CALIFICADA&quot;,  IF(Calificaci_n_de_Oportunidad__c&lt;70 &amp;&amp; Calificaci_n_de_Oportunidad__c &gt;=60, &quot;CALIFICADA CON ADVERTENCIA&quot;, &quot;DESCARTADA&quot;) ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Decisión</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

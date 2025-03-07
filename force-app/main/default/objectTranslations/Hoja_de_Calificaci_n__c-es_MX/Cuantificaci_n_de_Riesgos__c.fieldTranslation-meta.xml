@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- ¿El proyecto representa alto riesgo reputacional, legal, o económico? Sea: 1. Muy Alto. 2. Alto. 3. Medio. 4. Bajo. 5. Muy Bajo. --></help>
+    <label><!-- Cuantificación de Riesgos --></label>
+    <name>Cuantificaci_n_de_Riesgos__c</name>
+</CustomFieldTranslation>

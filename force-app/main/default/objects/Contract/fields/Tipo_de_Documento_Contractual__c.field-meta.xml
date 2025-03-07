@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_de_Documento_Contractual__c</fullName>
+    <label>Tipo de Documento Contractual</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Contrato Nuevo</fullName>
+                <default>false</default>
+                <label>Contrato Nuevo</label>
+            </value>
+            <value>
+                <fullName>OC/OT/OS</fullName>
+                <default>false</default>
+                <label>OC/OT/OS</label>
+            </value>
+            <value>
+                <fullName>Control de Cambios</fullName>
+                <default>false</default>
+                <label>Control de Cambios</label>
+            </value>
+            <value>
+                <fullName>Otro-si</fullName>
+                <default>false</default>
+                <label>Otro-si</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

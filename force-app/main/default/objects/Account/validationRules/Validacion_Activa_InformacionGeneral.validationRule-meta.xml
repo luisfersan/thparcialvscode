@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validacion_Activa_InformacionGeneral</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR( ISBLANK( NIT__c ),   ISPICKVAL( Tipo_de_Cliente__c , &quot;&quot;),   ISPICKVAL( Tipo_de_Cuenta__c , &quot;&quot;)),ISPICKVAL(  Estado_de_Cuenta__c , &quot;Activa&quot;))</errorConditionFormula>
+    <errorMessage>Por favor confirme que todos los campos existentes en la sección &quot;Información General&quot; se encuentran diligenciados, de lo contrario no será posible continuar con el proceso.</errorMessage>
+</ValidationRule>

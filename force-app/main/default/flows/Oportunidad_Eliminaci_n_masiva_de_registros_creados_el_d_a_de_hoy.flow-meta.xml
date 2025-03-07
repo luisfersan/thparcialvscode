@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Permite eliminar todos los registros que se hayan creado el día de hoy</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>FechaEliminacion</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <interviewLabel>Oportunidad: Eliminación masiva de registros creados el día de hoy {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Oportunidad: Eliminación masiva de registros creados el día de hoy</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordDeletes>
+        <description>Busca las oportunidades cuyo CreateDate sea Hoy.</description>
+        <name>EliminarOportunidades</name>
+        <label>EliminarOportunidades</label>
+        <locationX>176</locationX>
+        <locationY>252</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>CreatedDate</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>FechaEliminacion</elementReference>
+            </value>
+        </filters>
+        <object>Opportunity</object>
+    </recordDeletes>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>EliminarOportunidades</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <schedule>
+            <frequency>Once</frequency>
+            <startDate>2024-08-13</startDate>
+            <startTime>10:16:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

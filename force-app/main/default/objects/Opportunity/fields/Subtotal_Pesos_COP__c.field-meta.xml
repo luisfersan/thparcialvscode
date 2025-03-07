@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subtotal_Pesos_COP__c</fullName>
+    <label>Subtotal Pesos (COP)</label>
+    <summarizedField>Cotizaci_n__c.Total_Cotizacion_Pesos_SinIVa__c</summarizedField>
+    <summaryFilterItems>
+        <field>Cotizaci_n__c.Sincronizar_Cotizaci_n__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Cotizaci_n__c.Valores_est_n_Correctos__c</field>
+        <operation>equals</operation>
+        <value>Sí</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Cotizaci_n__c.Vigencia_est_Correcta__c</field>
+        <operation>equals</operation>
+        <value>Sí</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Cotizaci_n__c.Nombre_del_Proyecto__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <type>Summary</type>
+</CustomField>

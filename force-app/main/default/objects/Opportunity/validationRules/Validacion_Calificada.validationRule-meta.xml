@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validacion_Calificada</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR( ISBLANK( Decisi_n__c ),  Decisi_n__c =&quot;DESCARTADA&quot; ),OR( ISPICKVAL( StageName , &quot;Calificada Presupuestal&quot;),  ISPICKVAL( StageName , &quot;Calificada Compra&quot;)  ))</errorConditionFormula>
+    <errorMessage>Por favor verifique en la Sección &quot;Política Comercial&quot; que todos los campos estén diligenciados y que la Oportunidad no se encuentra DESCARTADA. De ser así, diligenciar la sección &quot;Perdida&quot;.</errorMessage>
+</ValidationRule>

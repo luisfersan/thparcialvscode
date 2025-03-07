@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <errorMessage><!-- Debe dirigirse a la sección &quot;Descarte&quot; y proporcionar una o varias causas de descarte, así como un comentario detallado asociado a dicha causa. Por favor verifique que No es posible atender la solución requerida. --></errorMessage>
+        <name>Descarte_Prospecto</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Por favor diligencie el nombre. --></errorMessage>
+        <name>First_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Si no es posible atender la solución requerida, debe dirigirse a la sección &quot;Descarte&quot; y proporcionar una o varias causas de descarte, así como un comentario detallado asociado a dicha causa. --></errorMessage>
+        <name>Negativa_Atender_Solucion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Digitar un número de teléfono válido. --></errorMessage>
+        <name>Validacion_Celular</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Por favor confirme que todos los campos existentes en la sección &quot;Información General&quot; se encuentran diligenciados, de lo contrario no será posible continuar con el proceso. --></errorMessage>
+        <name>Validacion_Convertido_InformacionGeneral</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Por favor confirme que todos los campos existentes en la sección &quot;Solución Requerida&quot; se encuentran diligenciados, de lo contrario no será posible continuar con el proceso. --></errorMessage>
+        <name>Validacion_Convertido_SolucionRequerida</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Por favor confirme que todos los campos existentes en la sección &quot;Ubicación y Contacto&quot; se encuentran diligenciados, de lo contrario no será posible continuar con el proceso. --></errorMessage>
+        <name>Validacion_Convertido_UbicacionYContacto</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validacion_Convertido_SolucionRequerida</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR(ISPICKVAL( Tipo_de_Soluci_n_Requerida__c , &quot;&quot;), ISPICKVAL( Podemos_Atender_la_Soluci_n_Requerida__c , &quot;&quot;),ISBLANK( Descripci_n_Detallada__c )),ISPICKVAL( Status , &quot;Convertido&quot;))</errorConditionFormula>
+    <errorMessage>Por favor confirme que todos los campos existentes en la sección &quot;Solución Requerida&quot; se encuentran diligenciados, de lo contrario no será posible continuar con el proceso.</errorMessage>
+</ValidationRule>

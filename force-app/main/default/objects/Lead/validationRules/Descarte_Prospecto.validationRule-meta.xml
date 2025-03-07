@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Descarte_Prospecto</fullName>
+    <active>true</active>
+    <description>Activa cuando establece estado del prospecto en descartado y no propicia causa ni información</description>
+    <errorConditionFormula>AND(OR(INCLUDES( Causa_de_Descarte__c , &quot;&quot;) ,  ISBLANK( Comentarios__c )  ), ISPICKVAL( Status , &quot;Descartado&quot;) )</errorConditionFormula>
+    <errorMessage>Debe dirigirse a la sección &quot;Descarte&quot; y proporcionar una o varias causas de descarte, así como un comentario detallado asociado a dicha causa. Por favor verifique que No es posible atender la solución requerida.</errorMessage>
+</ValidationRule>

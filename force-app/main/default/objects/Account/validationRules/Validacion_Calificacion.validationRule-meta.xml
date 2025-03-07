@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validacion_Calificacion</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR(  ISBLANK(Calificaci_n_de_Cliente__c),  Calificaci_n_de_Cliente__c &lt;&gt;&quot;Recomendado&quot; ), ISPICKVAL( Estado_de_Cuenta__c , &quot;Activa&quot;) )</errorConditionFormula>
+    <errorDisplayField>Calificaci_n_de_Cliente__c</errorDisplayField>
+    <errorMessage>El Cliente debe tener una calificación Recomendada para poder activar la cuenta.</errorMessage>
+</ValidationRule>

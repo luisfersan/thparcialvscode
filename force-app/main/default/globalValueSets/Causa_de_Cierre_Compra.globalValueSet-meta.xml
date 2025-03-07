@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Precio</fullName>
+        <default>false</default>
+        <label>Precio</label>
+    </customValue>
+    <customValue>
+        <fullName>Plazo</fullName>
+        <default>false</default>
+        <label>Plazo</label>
+    </customValue>
+    <customValue>
+        <fullName>Criterios Técnicos</fullName>
+        <default>false</default>
+        <label>Criterios Técnicos</label>
+    </customValue>
+    <customValue>
+        <fullName>Condición Comercial</fullName>
+        <default>false</default>
+        <label>Condición Comercial</label>
+    </customValue>
+    <customValue>
+        <fullName>Falta de Seguimiento</fullName>
+        <default>false</default>
+        <label>Falta de Seguimiento</label>
+    </customValue>
+    <customValue>
+        <fullName>Desistimiento del Cliente</fullName>
+        <default>false</default>
+        <label>Desistimiento del Cliente</label>
+    </customValue>
+    <customValue>
+        <fullName>Relacionamiento Comercial</fullName>
+        <default>false</default>
+        <label>Relacionamiento Comercial</label>
+    </customValue>
+    <customValue>
+        <fullName>Términos Legales</fullName>
+        <default>false</default>
+        <label>Términos Legales</label>
+    </customValue>
+    <customValue>
+        <fullName>Otro</fullName>
+        <default>false</default>
+        <label>Otro</label>
+    </customValue>
+    <customValue>
+        <fullName>Priorización</fullName>
+        <default>false</default>
+        <label>Priorización</label>
+    </customValue>
+    <customValue>
+        <fullName>Falta de Información</fullName>
+        <default>false</default>
+        <label>Falta de Información</label>
+    </customValue>
+    <customValue>
+        <fullName>Descartada</fullName>
+        <default>false</default>
+        <label>Descartada</label>
+    </customValue>
+    <masterLabel>Causa de Cierre Compra</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

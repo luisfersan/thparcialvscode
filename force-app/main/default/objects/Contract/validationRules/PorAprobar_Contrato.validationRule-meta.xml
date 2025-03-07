@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PorAprobar_Contrato</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR( ISBLANK( Account.Name ),  ISBLANK( Opportunity__c )  ), ISPICKVAL( Status , &quot;Por Aprobar&quot;))</errorConditionFormula>
+    <errorMessage>Debe diligenciar todos los campos de la sección &quot;Información General&quot; para poder continuar con el proceso.</errorMessage>
+</ValidationRule>

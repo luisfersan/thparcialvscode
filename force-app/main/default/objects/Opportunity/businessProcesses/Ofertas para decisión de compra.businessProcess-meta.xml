@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ofertas para decisión de compra</fullName>
+    <description>Proceso comercial de oferta con decisión de compra</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Adjudicada - Compra</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Calificada Compra</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Generada Compra</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Identificada Compra</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Ofertada Compra</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Perdida - Compra</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Pre Cierre</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

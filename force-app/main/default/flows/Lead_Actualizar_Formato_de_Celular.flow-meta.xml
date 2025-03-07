@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <customErrors>
+        <name>Error_Celular_Alfanum_rico</name>
+        <label>Error Celular Alfanumérico</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <customErrorMessages>
+            <errorMessage>Por favor digitar un número de celular válido.</errorMessage>
+            <fieldSelection>Tel_fono_de_Contacto__c</fieldSelection>
+            <isFieldError>true</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <decisions>
+        <name>El_celular_contiene_letras</name>
+        <label>¿El celular contiene letras?</label>
+        <locationX>182</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>S</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ValidacionLetrasEnCelular</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Error_Celular_Alfanum_rico</targetReference>
+            </connector>
+            <label>Sí</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>FormatoCelular</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    CONTAINS({!$Record.Tel_fono_de_Contacto__c}, &quot;(&quot;) &amp;&amp; CONTAINS({!$Record.Tel_fono_de_Contacto__c}, &quot;)&quot;) &amp;&amp; CONTAINS({!$Record.Tel_fono_de_Contacto__c}, &quot;-&quot;),
+    {!$Record.Tel_fono_de_Contacto__c}, 
+    &quot;(&quot; &amp; LEFT({!$Record.Tel_fono_de_Contacto__c}, 3) &amp; &quot;)&quot; &amp;&quot; &quot;&amp; MID({!$Record.Tel_fono_de_Contacto__c}, 4, 3) &amp; &quot;-&quot; &amp; RIGHT({!$Record.Tel_fono_de_Contacto__c}, 4))</expression>
+    </formulas>
+    <formulas>
+        <name>ValidacionLetrasEnCelular</name>
+        <dataType>Boolean</dataType>
+        <expression>REGEX({!$Record__Prior.Tel_fono_de_Contacto__c}, &apos;^[a-zA-Z0-9]$&apos;)</expression>
+    </formulas>
+    <formulas>
+        <name>VieneDelWebToLead</name>
+        <dataType>Boolean</dataType>
+        <expression>CONTAINS({!$Record.Tel_fono_de_Contacto__c}, &quot;(&quot;) || CONTAINS({!$Record.Tel_fono_de_Contacto__c}, &quot;)&quot;)</expression>
+    </formulas>
+    <interviewLabel>Lead: Actualizar Formato de Celular. {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Candidato: Actualizar Formato de Celular</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>El_celular_contiene_letras</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Tel_fono_de_Contacto__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Lead</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

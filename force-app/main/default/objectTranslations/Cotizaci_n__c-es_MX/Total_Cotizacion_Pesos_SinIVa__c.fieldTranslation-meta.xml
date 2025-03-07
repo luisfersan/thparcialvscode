@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Valor Cotización Pesos (Sin IVA) --></label>
+    <name>Total_Cotizacion_Pesos_SinIVa__c</name>
+</CustomFieldTranslation>

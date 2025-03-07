@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Si la oferta sale calificada con advertencia, ¿Cuáles son las precauciones a tener en cuenta, y cuales son los obstáculos a vencer? --></help>
+    <label><!-- Precauciones a Tener en Cuenta --></label>
+    <name>Precauciones_a_Tener_en_Cuenta__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cotización</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cotizaciones</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Cotización Layout</layout>
+        <sections>
+            <label><!-- Vínculos personalizados --></label>
+            <section>Vínculos personalizados</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- La cotización debe estar aprobada para poder sincronizarse. --></errorMessage>
+        <name>Sincronizar_Cotizacion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Por favor diligencie todos los componentes de la Sección &quot;Valor Componentes COP&quot; como mínimo para poder continuar con el proceso. --></errorMessage>
+        <name>ValidacionComponentesCOP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Por favor diligencie todos los campos existentes en la sección &quot;Información General&quot;. --></errorMessage>
+        <name>Validacion_Basicos</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Por favor diligencie los campos en la sección &quot;Validación Cotización&quot; para continuar con el proceso. --></errorMessage>
+        <name>ValoresCorrectos</name>
+    </validationRules>
+</CustomObjectTranslation>

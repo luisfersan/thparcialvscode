@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compact_Cotizacion</fullName>
+    <fields>Name</fields>
+    <fields>Ingeniero_de_Ofertas__c</fields>
+    <fields>Valor_Total_Cotizaci_n_Pesos__c</fields>
+    <fields>Valor_Total_Cotizaci_n_D_lares__c</fields>
+    <fields>Valor_Total_Cotizaci_n_Euros__c</fields>
+    <fields>Vigencia__c</fields>
+    <label>Compact Cotizacion</label>
+</CompactLayout>

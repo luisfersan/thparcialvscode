@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hoja_Calificaci_n_de_Cliente__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Hoja Calificación de Cliente</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Hoja_de_Calificaci_n_An_lisis_Financiero__c.Account__r.Id</field>
+            <operation>equals</operation>
+            <valueField>$Source.Id</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Hoja_de_Calificaci_n_An_lisis_Financiero__c</referenceTo>
+    <relationshipLabel>Accounts</relationshipLabel>
+    <relationshipName>Accounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>

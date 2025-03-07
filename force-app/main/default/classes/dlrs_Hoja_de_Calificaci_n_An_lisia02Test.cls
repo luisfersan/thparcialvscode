@@ -1,0 +1,13 @@
+/**
+ * Auto Generated and Deployed by the Declarative Lookup Rollup Summaries Tool package (dlrs)
+ **/
+@IsTest
+private class dlrs_Hoja_de_Calificaci_n_An_lisia02Test
+{
+    @IsTest
+    private static void testTrigger()
+    {
+        // Force the dlrs_Hoja_de_Calificaci_n_An_la02Trigger to be invoked, fails the test if org config or other Apex code prevents this.
+        dlrs.RollupService.testHandler(new Hoja_de_Calificaci_n_An_lisis_Financiero__c());
+    }
+}

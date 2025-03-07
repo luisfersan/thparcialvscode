@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ForecastingGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <developerName>Mercado_Vertical_ForecastPrueba</developerName>
+    <forecastingGroupItems>
+        <displayPosition>5</displayPosition>
+        <sourceApiValue>Oficial</sourceApiValue>
+    </forecastingGroupItems>
+    <forecastingGroupItems>
+        <displayPosition>6</displayPosition>
+        <sourceApiValue>Otros</sourceApiValue>
+    </forecastingGroupItems>
+    <forecastingGroupItems>
+        <displayPosition>7</displayPosition>
+        <sourceApiValue>Salud</sourceApiValue>
+    </forecastingGroupItems>
+    <forecastingGroupItems>
+        <displayPosition>1</displayPosition>
+        <sourceApiValue>Corporativo</sourceApiValue>
+    </forecastingGroupItems>
+    <forecastingGroupItems>
+        <displayPosition>4</displayPosition>
+        <sourceApiValue>Industria</sourceApiValue>
+    </forecastingGroupItems>
+    <forecastingGroupItems>
+        <displayPosition>8</displayPosition>
+        <sourceApiValue>Vivienda</sourceApiValue>
+    </forecastingGroupItems>
+    <forecastingGroupItems>
+        <displayPosition>2</displayPosition>
+        <sourceApiValue>Educativo</sourceApiValue>
+    </forecastingGroupItems>
+    <forecastingGroupItems>
+        <displayPosition>3</displayPosition>
+        <sourceApiValue>Hotelero</sourceApiValue>
+    </forecastingGroupItems>
+    <forecastingGroupItems>
+        <displayPosition>0</displayPosition>
+        <sourceApiValue>Comercio</sourceApiValue>
+    </forecastingGroupItems>
+    <groupField>Mercado_Vertical__c</groupField>
+    <masterLabel>Mercado Vertical ForecastPrueba</masterLabel>
+    <sourceObject>Opportunity</sourceObject>
+</ForecastingGroup>

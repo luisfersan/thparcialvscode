@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllAccounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>NIT__c</columns>
+    <columns>Estado_de_Cuenta__c</columns>
+    <columns>Tipo_de_Cliente__c</columns>
+    <columns>Tipo_de_Cuenta__c</columns>
+    <columns>Departamento_Sede__c</columns>
+    <columns>Municipio_Sede__c</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>Todas las Cuentas</label>
+    <sharedTo>
+        <group>Directores_y_Admins</group>
+        <group>Ingenieros_de_Ofertas</group>
+    </sharedTo>
+</ListView>

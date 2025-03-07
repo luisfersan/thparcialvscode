@@ -1,0 +1,9 @@
+*** NOTIFICACIÓN DE NUEVO CANDIDATO CREADO ***  
+
+Se le ha asignado el siguiente Candidato
+Nombre Completo:  {!Lead.Name}  
+Teléfono de contacto: {!Lead.Tel_fono_de_Contacto__c}
+Correo Electrónico de Contacto: {!Lead.Correo_Electr_nico_Contacto__c}
+Compañía:  {!Lead.Company} 
+
+Ingrese al siguiente enlace para acceder al registro directamente:  {!Lead.Link}

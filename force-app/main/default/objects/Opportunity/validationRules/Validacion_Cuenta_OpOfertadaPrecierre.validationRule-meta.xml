@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validacion_Cuenta_OpOfertadaPrecierre</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL(Account.Estado_de_Cuenta__c,&quot;Por Validar&quot;)  ,OR( ISPICKVAL( StageName , &quot;Ofertada Presupuestal&quot;),ISPICKVAL( StageName , &quot;Ofertada Compra&quot;),ISPICKVAL( StageName , &quot;Pre Cierre&quot;) ))</errorConditionFormula>
+    <errorMessage>No es posible establecer un estado Ofertado o Pre Cierre asociados a una cuenta Por Validar. Por favor, Active la cuenta antes de seguir con el proceso.</errorMessage>
+</ValidationRule>

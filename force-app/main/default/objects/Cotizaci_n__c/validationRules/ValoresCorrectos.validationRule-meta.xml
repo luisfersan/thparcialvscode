@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValoresCorrectos</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR( ISPICKVAL( Valores_est_n_Correctos__c , &quot;&quot;),  ISPICKVAL( Valores_est_n_Correctos__c , &quot;No&quot;),  ISPICKVAL( Vigencia_est_Correcta__c , &quot;&quot;),  ISPICKVAL( Vigencia_est_Correcta__c , &quot;No&quot;)    ), ISPICKVAL( Estado_Cotizaci_n__c , &quot;Aprobada&quot;) )</errorConditionFormula>
+    <errorMessage>Por favor diligencie los campos en la sección &quot;Validación Cotización&quot; para continuar con el proceso.</errorMessage>
+</ValidationRule>

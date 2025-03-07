@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sincronizar_Cotizacion</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( Sincronizar_Cotizaci_n__c =TRUE, ISPICKVAL( Estado_Cotizaci_n__c , &quot;Por Aprobar&quot;) )</errorConditionFormula>
+    <errorDisplayField>Sincronizar_Cotizaci_n__c</errorDisplayField>
+    <errorMessage>La cotización debe estar aprobada para poder sincronizarse.</errorMessage>
+</ValidationRule>

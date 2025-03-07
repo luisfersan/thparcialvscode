@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Causa_de_Descarte__c</fullName>
+    <label>Causa de Descarte</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ubicación Geográfica</fullName>
+                <default>false</default>
+                <label>Ubicación Geográfica</label>
+            </value>
+            <value>
+                <fullName>Monto del Proyecto</fullName>
+                <default>false</default>
+                <label>Monto del Proyecto</label>
+            </value>
+            <value>
+                <fullName>Alcance del Proyecto</fullName>
+                <default>false</default>
+                <label>Alcance del Proyecto</label>
+            </value>
+            <value>
+                <fullName>Tipo de Cliente</fullName>
+                <default>false</default>
+                <label>Tipo de Cliente</label>
+            </value>
+            <value>
+                <fullName>Otro</fullName>
+                <default>false</default>
+                <label>Otro</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

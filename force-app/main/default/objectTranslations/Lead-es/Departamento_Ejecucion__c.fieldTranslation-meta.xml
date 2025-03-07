@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Departamento Ejecución Proyecto --></label>
+    <name>Departamento_Ejecucion__c</name>
+    <picklistValues>
+        <masterLabel>Amazonas</masterLabel>
+        <translation><!-- Amazonas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Antioquia</masterLabel>
+        <translation><!-- Antioquia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arauca</masterLabel>
+        <translation><!-- Arauca --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Archipiélago de San Andrés, Providencia y Santa Catalina</masterLabel>
+        <translation><!-- Archipiélago de San Andrés, Providencia y Santa Catalina --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Atlántico</masterLabel>
+        <translation><!-- Atlántico --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bogotá D.C.</masterLabel>
+        <translation><!-- Bogotá D.C. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bolívar</masterLabel>
+        <translation><!-- Bolívar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boyacá</masterLabel>
+        <translation><!-- Boyacá --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Caldas</masterLabel>
+        <translation><!-- Caldas --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Caquetá</masterLabel>
+        <translation><!-- Caquetá --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Casanare</masterLabel>
+        <translation><!-- Casanare --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cauca</masterLabel>
+        <translation><!-- Cauca --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cesar</masterLabel>
+        <translation><!-- Cesar --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chocó</masterLabel>
+        <translation><!-- Chocó --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cundinamarca</masterLabel>
+        <translation><!-- Cundinamarca --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Córdoba</masterLabel>
+        <translation><!-- Córdoba --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guainía</masterLabel>
+        <translation><!-- Guainía --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Guaviare</masterLabel>
+        <translation><!-- Guaviare --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Huila</masterLabel>
+        <translation><!-- Huila --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>La Guajira</masterLabel>
+        <translation><!-- La Guajira --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Magdalena</masterLabel>
+        <translation><!-- Magdalena --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Meta</masterLabel>
+        <translation><!-- Meta --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nariño</masterLabel>
+        <translation><!-- Nariño --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Norte de Santander</masterLabel>
+        <translation><!-- Norte de Santander --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Putumayo</masterLabel>
+        <translation><!-- Putumayo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quindío</masterLabel>
+        <translation><!-- Quindío --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Risaralda</masterLabel>
+        <translation><!-- Risaralda --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santander</masterLabel>
+        <translation><!-- Santander --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sucre</masterLabel>
+        <translation><!-- Sucre --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tolima</masterLabel>
+        <translation><!-- Tolima --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Valle del Cauca</masterLabel>
+        <translation><!-- Valle del Cauca --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vaupés</masterLabel>
+        <translation><!-- Vaupés --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vichada</masterLabel>
+        <translation><!-- Vichada --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

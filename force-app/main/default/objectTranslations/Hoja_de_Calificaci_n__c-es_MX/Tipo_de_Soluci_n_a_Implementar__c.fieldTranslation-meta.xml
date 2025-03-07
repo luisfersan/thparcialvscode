@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- ¿La solución a implementar esta dentro de nuestro campo de experiencia? Sea: 1, No. 3. Parcialmente.5. Sí. --></help>
+    <label><!-- Tipo de Solución a Implementar --></label>
+    <name>Tipo_de_Soluci_n_a_Implementar__c</name>
+    <picklistValues>
+        <masterLabel>1</masterLabel>
+        <translation><!-- 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3</masterLabel>
+        <translation><!-- 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5</masterLabel>
+        <translation><!-- 5 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

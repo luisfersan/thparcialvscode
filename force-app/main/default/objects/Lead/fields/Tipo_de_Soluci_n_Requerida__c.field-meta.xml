@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo_de_Soluci_n_Requerida__c</fullName>
+    <label>Tipo de Solución Requerida</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Tipo_de_Soluci_n_Requerida</valueSetName>
+    </valueSet>
+</CustomField>

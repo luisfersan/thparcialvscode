@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Group xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Creación del grupo Administradores para relacionar en el campo de: &quot;Acceso de Sandbox&quot;, cuando creamos el Sandbox de Desarrollo: &quot;Dev&quot;</description>
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <name>Administradores</name>
+</Group>

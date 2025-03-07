@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Negativa_Atender_Solucion</fullName>
+    <active>true</active>
+    <description>Si no se puede atender la solución requerida, no permite actualizar estado a convertido</description>
+    <errorConditionFormula>AND( ISPICKVAL( Podemos_Atender_la_Soluci_n_Requerida__c , &quot;No&quot;) , ISPICKVAL( Status , &quot;Convertido&quot;))</errorConditionFormula>
+    <errorMessage>Si no es posible atender la solución requerida, debe dirigirse a la sección &quot;Descarte&quot; y proporcionar una o varias causas de descarte, así como un comentario detallado asociado a dicha causa.</errorMessage>
+</ValidationRule>

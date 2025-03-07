@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- ¿Hay mas proyectos con este cliente? Sea: 1. No. 2. Una Oportunidad. 3. Dos Oportunidades. 4. Tres Oportunidades. 5. Cuatro o más Oportunidades. --></help>
+    <label><!-- Cliente con Múltiples Negocios --></label>
+    <name>Cliente_con_M_ltiples_Negocios__c</name>
+</CustomFieldTranslation>

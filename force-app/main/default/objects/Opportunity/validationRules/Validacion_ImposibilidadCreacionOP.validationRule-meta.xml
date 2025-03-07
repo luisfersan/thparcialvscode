@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validacion_ImposibilidadCreacionOP</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISPICKVAL( Account.Estado_de_Cuenta__c , &quot;Inactiva&quot;) ,OR( ISPICKVAL( StageName , &quot;Identificada Presupuestal&quot;), ISPICKVAL( StageName , &quot;Identificada Compra&quot;) ))</errorConditionFormula>
+    <errorMessage>No es posible generar oportunidades para Cuentas en estado Inactivo. Por favor actualice el estado de la Cuenta para poder continuar con el proceso.</errorMessage>
+</ValidationRule>

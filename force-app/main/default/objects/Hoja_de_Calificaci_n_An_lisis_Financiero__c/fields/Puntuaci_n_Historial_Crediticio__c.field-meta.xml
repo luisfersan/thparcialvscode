@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Puntuaci_n_Historial_Crediticio__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(( Demandas_ltimos_5_A_os__c &gt;= 3 ||  Periodos_en_Mora_en_ltimo_A_o__c &gt;= 3), &quot;No Recomendado&quot;, &quot;Sin Restricciones&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Puntuación Historial Crediticio</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

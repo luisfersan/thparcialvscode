@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Cotizacion_Aprobada</fullName>
+        <description>Cotización Aprobada</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Cotizaci_n_Aprobada_1740707780874</template>
+    </alerts>
+    <alerts>
+        <fullName>Notifica_a_un_Gerente_cuando_una_Cotizaci_n_Venci</fullName>
+        <description>Notifica a un Gerente cuando una Cotización Venció</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Usuarios__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Notificar_Vencimiento_Cotizacion</template>
+    </alerts>
+</Workflow>

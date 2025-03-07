@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- ¿El proyecto tiene conocimiento publico y por tanto sirve como herramienta de visibilización estratégica/comercial? Sea: 1. Desapercibido. 3. Medianamente Conocido. 5. Emblemático. --></help>
+    <label><!-- Reconocimiento Público del Proyecto --></label>
+    <name>Reconocimiento_P_blico_del_Proyecto__c</name>
+    <picklistValues>
+        <masterLabel>1</masterLabel>
+        <translation><!-- 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3</masterLabel>
+        <translation><!-- 3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>5</masterLabel>
+        <translation><!-- 5 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

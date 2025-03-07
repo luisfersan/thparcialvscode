@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Miller Mahecha</fullName>
+        <default>false</default>
+        <label>Miller Mahecha</label>
+    </customValue>
+    <customValue>
+        <fullName>Mariluz Montañez</fullName>
+        <default>false</default>
+        <label>Mariluz Montañez</label>
+    </customValue>
+    <customValue>
+        <fullName>David González</fullName>
+        <default>false</default>
+        <label>David González</label>
+    </customValue>
+    <masterLabel>Gerente Comercial Encargado</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

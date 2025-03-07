@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Cotizacion_Pesos_SinIVa__c</fullName>
+    <externalId>false</externalId>
+    <formula>Valor_Componentes_COP_Sin_IVA__c + Valor_Componentes_EUR_Sin_IVA__c*TRM_EUR__c +  Valor_Componentes_USD_Sin_IVA__c*TRM_USD__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Valor Cotización Pesos (Sin IVA)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

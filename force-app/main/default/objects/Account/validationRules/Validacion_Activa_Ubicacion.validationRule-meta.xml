@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validacion_Activa_Ubicacion</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR(ISPICKVAL(  Departamento_Sede__c , &quot;&quot;),  ISPICKVAL( Municipio_Sede__c , &quot;&quot;) ),ISPICKVAL(  Estado_de_Cuenta__c , &quot;Activa&quot;))</errorConditionFormula>
+    <errorMessage>Por favor confirme que todos los campos existentes en la sección &quot;Ubicación&quot; se encuentran diligenciados, de lo contrario no será posible continuar con el proceso.</errorMessage>
+</ValidationRule>

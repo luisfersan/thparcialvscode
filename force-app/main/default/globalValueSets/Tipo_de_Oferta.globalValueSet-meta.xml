@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Cliente Existente</fullName>
+        <default>false</default>
+        <label>Cliente Existente</label>
+    </customValue>
+    <customValue>
+        <fullName>Cliente Nuevo</fullName>
+        <default>false</default>
+        <label>Cliente Nuevo</label>
+    </customValue>
+    <customValue>
+        <fullName>Obras Menores - Adicionales de Obra</fullName>
+        <default>false</default>
+        <label>Obras Menores - Adicionales de Obra</label>
+    </customValue>
+    <customValue>
+        <fullName>Retrofit - Proyecto Propio</fullName>
+        <default>false</default>
+        <label>Retrofit - Proyecto Propio</label>
+    </customValue>
+    <customValue>
+        <fullName>Mantenimiento Preventivo</fullName>
+        <default>false</default>
+        <label>Mantenimiento Preventivo</label>
+    </customValue>
+    <customValue>
+        <fullName>Mantenimiento Correctivo</fullName>
+        <default>false</default>
+        <label>Mantenimiento Correctivo</label>
+    </customValue>
+    <customValue>
+        <fullName>Renting</fullName>
+        <default>false</default>
+        <label>Renting</label>
+    </customValue>
+    <masterLabel>Tipo de Oferta</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

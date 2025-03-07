@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>C_mo_conoci_Thermoandina__c</fullName>
+    <label>¿Cómo Conoció Thermoandina?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Redes Sociales</fullName>
+                <default>false</default>
+                <label>Redes Sociales</label>
+            </value>
+            <value>
+                <fullName>Página Web</fullName>
+                <default>false</default>
+                <label>Página Web</label>
+            </value>
+            <value>
+                <fullName>Evento</fullName>
+                <default>false</default>
+                <label>Evento</label>
+            </value>
+            <value>
+                <fullName>Voz a Voz</fullName>
+                <default>false</default>
+                <label>Voz a Voz</label>
+            </value>
+            <value>
+                <fullName>Prospección</fullName>
+                <default>false</default>
+                <label>Prospección</label>
+            </value>
+            <value>
+                <fullName>Pagina Web</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Pagina Web</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
