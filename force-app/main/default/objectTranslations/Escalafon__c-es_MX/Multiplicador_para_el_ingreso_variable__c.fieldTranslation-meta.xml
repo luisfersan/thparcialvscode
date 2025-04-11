@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Multiplicador para el ingreso variable --></label>
+    <name>Multiplicador_para_el_ingreso_variable__c</name>
+</CustomFieldTranslation>

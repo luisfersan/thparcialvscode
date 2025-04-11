@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Para crear cotización de los Ingenieros de Ofertas sin respetar la colaboración.</description>
+    <flowDefinition>Crea_Cotizacion_Sin_respetar_Colaboracion</flowDefinition>
+    <label>Crear Cotización</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

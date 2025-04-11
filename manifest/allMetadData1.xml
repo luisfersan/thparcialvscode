@@ -129,6 +129,10 @@
         <members>Account.Tipo_de_Cliente__c</members>
         <members>Account.Tipo_de_Cuenta__c</members>
         <members>AccountContactRelation.Relationship_Strength__c</members>
+        <members>Categoria__c.Categoria__c</members>
+        <members>Categoria__c.Derating_Factor__c</members>
+        <members>Categoria__c.Meta_de_Venta_Neto_antes_de_IVA__c</members>
+        <members>Categoria__c.Porcentaje_Comision__c</members>
         <members>Contact.C_mo_Conoci_Thermoandina__c</members>
         <members>Contact.Cargo_de_Contacto__c</members>
         <members>Contact.Celular_de_Contacto__c</members>
@@ -191,6 +195,8 @@
         <members>Cotizaci_n__c.Valores_est_n_Correctos__c</members>
         <members>Cotizaci_n__c.Vigencia__c</members>
         <members>Cotizaci_n__c.Vigencia_est_Correcta__c</members>
+        <members>Escalafon__c.Escalafon__c</members>
+        <members>Escalafon__c.Multiplicador_para_el_ingreso_variable__c</members>
         <members>ForecastingItem__hd.AmountWithoutAdjustments__c</members>
         <members>ForecastingItem__hd.AmountWithoutManagerAdjustment__c</members>
         <members>ForecastingItem__hd.ForecastAmount__c</members>
@@ -273,6 +279,7 @@
         <members>Opportunity.C_digo_de_Cotizaci_n__c</members>
         <members>Opportunity.C_mo_Conoci_Thermoandina__c</members>
         <members>Opportunity.Calificaci_n_de_Oportunidad__c</members>
+        <members>Opportunity.Categoria__c</members>
         <members>Opportunity.Causa_de_Cierre_Compra__c</members>
         <members>Opportunity.Causa_de_Cierre_Presupuestal__c</members>
         <members>Opportunity.Compromisos_de_Negociaci_n__c</members>
@@ -291,6 +298,7 @@
         <members>Opportunity.Fecha_de_Ofertada__c</members>
         <members>Opportunity.Fecha_de_ltima_Revisi_n__c</members>
         <members>Opportunity.Hoja_Calificaci_n_Pol_tica_Comercial__c</members>
+        <members>Opportunity.IDCategoria__c</members>
         <members>Opportunity.IVA_Pesos_COP__c</members>
         <members>Opportunity.Informe_Levantamiento_de_Requerimientos__c</members>
         <members>Opportunity.Ingenieros_de_Ofertas__c</members>
@@ -333,12 +341,16 @@
     <types>
         <members>dlrs__LookupRollupSummary2.Sintetizacin_Hojas_de_Calificacin</members>
         <members>dlrs__LookupRollupSummary2.Sintetizacin_Hojas_de_Calificacin_Cuen</members>
+        <members>test.Meta_Licitaci_n_existente</members>
         <name>CustomMetadata</name>
     </types>
     <types>
         <members>Account</members>
         <members>AccountContactRelation</members>
         <members>AccountContactRole</members>
+        <members>ActionPlan</members>
+        <members>ActionPlanItemDependency</members>
+        <members>ActionPlnTmplItmDependency</members>
         <members>Activity</members>
         <members>AnalyticsUserAttrFuncTkn</members>
         <members>ApprovalSubmission</members>
@@ -348,10 +360,14 @@
         <members>AssetRelationship</members>
         <members>AssistantProgress</members>
         <members>AssociatedLocation</members>
+        <members>BatchJob</members>
+        <members>BatchJobPart</members>
+        <members>BatchJobPartFailedRecord</members>
         <members>Campaign</members>
         <members>CampaignMember</members>
         <members>Case</members>
         <members>CaseContactRole</members>
+        <members>Categoria__c</members>
         <members>ChatterActivity</members>
         <members>CollaborationGroup</members>
         <members>CollaborationGroupMember</members>
@@ -364,6 +380,7 @@
         <members>DuplicateRecordItem</members>
         <members>DuplicateRecordSet</members>
         <members>EmailMessage</members>
+        <members>Escalafon__c</members>
         <members>Event</members>
         <members>ExchangeUserMapping</members>
         <members>ExpressionFilter</members>
@@ -454,10 +471,13 @@
         <members>WorkOrder</members>
         <members>WorkOrderLineItem</members>
         <members>WorkThanks</members>
+        <members>test__mdt</members>
         <name>CustomObject</name>
     </types>
     <types>
+        <members>Categoria__c-es_MX</members>
         <members>Cotizaci_n__c-es_MX</members>
+        <members>Escalafon__c-es_MX</members>
         <members>Hoja_de_Calificaci_n_An_lisis_Financiero__c-es_MX</members>
         <members>Hoja_de_Calificaci_n__c-es_MX</members>
         <members>In_App_Checklist_Settings__c-en_US</members>
@@ -471,10 +491,13 @@
         <members>dlrs__LookupRollupSummaryLog__c-en_US</members>
         <members>dlrs__LookupRollupSummaryScheduleItems__c-en_US</members>
         <members>dlrs__LookupRollupSummary__c-en_US</members>
+        <members>test__mdt-es_MX</members>
         <name>CustomObjectTranslation</name>
     </types>
     <types>
+        <members>Categoria__c</members>
         <members>Cotizaci_n__c</members>
+        <members>Escalafon__c</members>
         <members>Hoja_de_Calificaci_n_An_lisis_Financiero__c</members>
         <members>Hoja_de_Calificaci_n__c</members>
         <members>Municipios__c</members>
@@ -508,14 +531,6 @@
         <members>Service_Dashboards/Service_Exec_Overview</members>
         <members>Service_Dashboards/Service_KPIs</members>
         <name>Dashboard</name>
-    </types>
-    <types>
-        <members>content/Imagenes.sfdc_cms__languageSettings/languages</members>
-        <name>DigitalExperience</name>
-    </types>
-    <types>
-        <members>content/Imagenes</members>
-        <name>DigitalExperienceBundle</name>
     </types>
     <types>
         <members>SalesTools</members>
@@ -790,6 +805,13 @@
     <types>
         <members>Account-Account Layout</members>
         <members>AccountContactRelation-Account Contact Relationship Layout</members>
+        <members>ActionPlan-Formato Plan de acción</members>
+        <members>ActionPlanItemDependency-Formato Dependencia de elemento de plan de acción</members>
+        <members>ActionPlanTemplate-Formato Plantilla de plan de acción</members>
+        <members>ActionPlanTemplateItem-Formato Elemento de plantilla de plan de acción</members>
+        <members>ActionPlanTemplateItemValue-Formato Valor de elemento de plantilla de plan de acción</members>
+        <members>ActionPlanTemplateVersion-Formato Versión de plantilla de plan de acción</members>
+        <members>ActionPlnTmplItmDependency-Formato Dependencia de elemento de plantilla de plan de acción</members>
         <members>Asset-Asset Layout</members>
         <members>AssetRelationship-Asset Relationship Layout</members>
         <members>Campaign-Campaign Layout</members>
@@ -798,6 +820,7 @@
         <members>Case-Case Layout</members>
         <members>CaseClose-Close Case Layout</members>
         <members>CaseInteraction-Case Feed Layout</members>
+        <members>Categoria__c-Formato Categoría</members>
         <members>CollaborationGroup-Group Layout</members>
         <members>Contact-Contact Layout</members>
         <members>ContentVersion-Content Version</members>
@@ -805,6 +828,8 @@
         <members>Cotizaci_n__c-Cotización Layout</members>
         <members>DuplicateRecordSet-Duplicate Record Set Layout</members>
         <members>EmailMessage-Email Message Layout</members>
+        <members>EnhancedLetterhead-Formato Membrete mejorado</members>
+        <members>Escalafon__c-Formato Escalafón</members>
         <members>Event-Event Layout</members>
         <members>FeedItem-Feed Item Layout</members>
         <members>FlowInterview-Flow Interview Layout</members>
@@ -815,8 +840,6 @@
         <members>Idea-Idea Layout</members>
         <members>Lead-Lead Layout</members>
         <members>Macro-Macro Layout</members>
-        <members>ManagedContent-Formato Contenido gestionado</members>
-        <members>ManagedContentVariant-Formato Variante de contenido gestionado</members>
         <members>Municipios__c-Municipios Layout</members>
         <members>Opportunity-Oportunidad Ofertas Decision Compra</members>
         <members>Opportunity-Oportunidad Ofertas Presupuestales</members>
@@ -854,6 +877,7 @@
         <members>WorkOrder-Work Order Layout</members>
         <members>WorkOrderLineItem-Work Order Line Item Layout</members>
         <members>WorkThanks-Thanks Layout</members>
+        <members>test__mdt-Formato test</members>
         <name>Layout</name>
     </types>
     <types>
@@ -879,6 +903,9 @@
         <members>ApprovalWorkItem.All_ApprovalWorkItems</members>
         <members>ApprovalWorkItem.Assigned_ApprovalWorkItems</members>
         <members>Asset.AllAssets</members>
+        <members>BatchJob.All_Batch_Jobs</members>
+        <members>BatchJobPart.All_Tasks</members>
+        <members>BatchJobPartFailedRecord.All_Failed_Records</members>
         <members>Campaign.AllActiveCampaigns</members>
         <members>Campaign.MyActiveCampaigns</members>
         <members>Campaign.Org_Campaign_Hierarchy</members>
@@ -886,6 +913,7 @@
         <members>Case.AllOpenCases</members>
         <members>Case.MyCases</members>
         <members>Case.MyOpenCases</members>
+        <members>Categoria__c.All</members>
         <members>CollaborationGroup.All_ChatterGroups</members>
         <members>Contact.AllContacts</members>
         <members>Contact.MyContacts</members>
@@ -898,6 +926,8 @@
         <members>Contract.MyDraftContracts</members>
         <members>Contract.MyInApprovalContracts</members>
         <members>Cotizaci_n__c.All</members>
+        <members>Cotizaci_n__c.Cotizaciones_de_Luis_Figueroa</members>
+        <members>Escalafon__c.All</members>
         <members>Event.MyRecentEvents</members>
         <members>Event.MyTeamsRecentEvents</members>
         <members>Event.MyTeamsUpcomingEvents</members>
@@ -1065,6 +1095,7 @@
         <members>NewLead</members>
         <members>NewOpportunity</members>
         <members>NewTask</members>
+        <members>Opportunity.Crear_Cotizacion</members>
         <members>Quote.SendEmail</members>
         <members>SendEmail</members>
         <members>Task.Defer</members>
@@ -1226,6 +1257,7 @@
         <members>Misinformes/Pipeline_Reporte_NUh</members>
         <members>Misinformes/Pipeline_Total_Mariluz_Montaez_Yyf</members>
         <members>Misinformes/Pipeline_Total_Miller_Mahecha_KVs</members>
+        <members>Misinformes/Reporte_Op_Adjudica_Resum_Ao_Anterior_pej</members>
         <members>Misinformes/Reporte_Op_Adjudicadas_Resumido_KwN</members>
         <members>Misinformes/Reporte_Op_para_Compra_Perdida_2_Q7i</members>
         <members>Misinformes/Reporte_Oportunidades_Adjudicadas_wDb</members>
@@ -1519,6 +1551,8 @@
     </types>
     <types>
         <members>Account</members>
+        <members>ActionPlan</members>
+        <members>ActionPlanTemplate</members>
         <members>ActivityRecurrence2</members>
         <members>ActivityRecurrence2Exception</members>
         <members>AnalyticsUserAttrFuncTkn</members>
@@ -1527,14 +1561,17 @@
         <members>AssistantInteraction</members>
         <members>AssistantProgress</members>
         <members>AssistantRecommendation</members>
+        <members>BatchJob</members>
         <members>CalendarModel</members>
         <members>CalendarView</members>
         <members>Campaign</members>
         <members>Case</members>
+        <members>Categoria__c</members>
         <members>ComponentResponseCache</members>
         <members>Contact</members>
         <members>ContactRequest</members>
         <members>ConvCoachingRecommendation</members>
+        <members>Escalafon__c</members>
         <members>ExchangeUserMapping</members>
         <members>ExternalEventMapping</members>
         <members>FlowInterview</members>
@@ -1654,10 +1691,12 @@
         <members>Asset</members>
         <members>Campaign</members>
         <members>Case</members>
+        <members>Categoria__c</members>
         <members>Contact</members>
         <members>ContentDocument</members>
         <members>Contract</members>
         <members>Cotizaci_n__c</members>
+        <members>Escalafon__c</members>
         <members>Event</members>
         <members>Hoja_de_Calificaci_n_An_lisis_Financiero__c</members>
         <members>Hoja_de_Calificaci_n__c</members>
