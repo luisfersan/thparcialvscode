@@ -6,7 +6,7 @@
     <name>Cotización Aprobada</name>
     <relatedEntityType>Cotizaci_n__c</relatedEntityType>
     <style>none</style>
-    <subject>Cotización con Folio: {{{Cotizaci_n__c.Name}}},ha sido Aprobada</subject>
+    <subject>Cotización con No.: {{{Cotizaci_n__c.Name}}},ha sido Aprobada</subject>
     <type>custom</type>
     <uiType>SFX</uiType>
 </EmailTemplate>

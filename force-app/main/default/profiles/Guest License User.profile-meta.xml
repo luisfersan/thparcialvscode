@@ -1925,6 +1925,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.Categoria__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.Causa_de_Cierre_Compra__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2026,6 +2031,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Hoja_Calificaci_n_Pol_tica_Comercial__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.IDCategoria__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3379,12 +3389,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Macro-Macro Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ManagedContent-Formato Contenido gestionado</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ManagedContentVariant-Formato Variante de contenido gestionado</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Municipios__c-Municipios Layout</layout>

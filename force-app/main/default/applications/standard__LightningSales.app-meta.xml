@@ -65,6 +65,8 @@
     <tabs>standard-Contract</tabs>
     <tabs>Hoja_de_Calificaci_n_An_lisis_Financiero__c</tabs>
     <tabs>Hoja_de_Calificaci_n__c</tabs>
+    <tabs>Categoria__c</tabs>
+    <tabs>Escalafon__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningSales_UtilityBar</utilityBar>
 </CustomApplication>

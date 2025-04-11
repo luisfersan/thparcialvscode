@@ -25,11 +25,19 @@
     <tabs>Hoja_de_Calificaci_n_An_lisis_Financiero__c</tabs>
     <tabs>Hoja_de_Calificaci_n__c</tabs>
     <tabs>Cotizaci_n__c</tabs>
+    <tabs>Categoria__c</tabs>
+    <tabs>Escalafon__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>HVSConsole_UtilityBar</utilityBar>
     <workspaceConfig>
         <mappings>
+            <tab>Categoria__c</tab>
+        </mappings>
+        <mappings>
             <tab>Cotizaci_n__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Escalafon__c</tab>
         </mappings>
         <mappings>
             <tab>Hoja_de_Calificaci_n_An_lisis_Financiero__c</tab>

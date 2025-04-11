@@ -30,6 +30,7 @@
             <operator>equals</operator>
             <value>Miller Mahecha</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Tabular</format>
     <name>New Opportunities Report</name>

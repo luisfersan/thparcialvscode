@@ -12,6 +12,11 @@
     <columns>CORE.USERS.FULL_NAME</columns>
     <columns>OPPORTUNITY.CREATED_DATE</columns>
     <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>equals</operation>
+        <value>CONSTRUCTORA PARQUE CENTRAL SA</value>
+    </filters>
     <label>Todas las oportunidades</label>
     <sharedTo>
         <group>Directores_y_Admins</group>

@@ -57,6 +57,7 @@
             <operator>equals</operator>
             <value>Miller Mahecha</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>

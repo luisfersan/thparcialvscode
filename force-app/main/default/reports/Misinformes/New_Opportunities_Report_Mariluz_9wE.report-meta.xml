@@ -30,6 +30,7 @@
             <operator>equals</operator>
             <value>Mariluz Montañez</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Tabular</format>
     <name>New Opportunities Report - Mariluz</name>

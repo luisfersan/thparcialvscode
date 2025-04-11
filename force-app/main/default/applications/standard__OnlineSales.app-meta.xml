@@ -20,5 +20,7 @@
     <tabs>standard-SalesforceContract</tabs>
     <tabs>standard-SalesforceInvoice</tabs>
     <tabs>standard-SalesforceProductCatalog</tabs>
+    <tabs>Categoria__c</tabs>
+    <tabs>Escalafon__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

@@ -1924,6 +1924,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Categoria__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Causa_de_Cierre_Compra__c</field>
         <readable>true</readable>
@@ -2026,6 +2031,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Hoja_Calificaci_n_Pol_tica_Comercial__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.IDCategoria__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3381,12 +3391,6 @@
         <layout>Macro-Macro Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>ManagedContent-Formato Contenido gestionado</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ManagedContentVariant-Formato Variante de contenido gestionado</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Municipios__c-Municipios Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4123,10 +4127,6 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>SelectFilesFromSalesforce</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
-        <name>SendExternalEmailAvailable</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>

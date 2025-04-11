@@ -31,9 +31,6 @@
         <field>ACCOUNT_NAME</field>
     </columns>
     <columns>
-        <field>Opportunity.Tipo_de_Oferta__c</field>
-    </columns>
-    <columns>
         <field>OPPORTUNITY_NAME</field>
     </columns>
     <columns>
@@ -56,6 +53,7 @@
             <operator>equals</operator>
             <value>Mariluz Montañez</value>
         </criteriaItems>
+        <language>es</language>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
@@ -70,7 +68,7 @@
     </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>FULL_NAME</field>
+        <field>Opportunity.Tipo_de_Oferta__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>

@@ -46,6 +46,9 @@
         <label>Crea Registro de Cotización</label>
         <locationX>176</locationX>
         <locationY>458</locationY>
+        <connector>
+            <targetReference>Obtener_Name_Cotizacion_Creada</targetReference>
+        </connector>
         <inputAssignments>
             <field>Descripci_n_Detallada_Componentes_EUR__c</field>
             <value>
@@ -120,9 +123,6 @@
         </inputAssignments>
         <inputAssignments>
             <field>Valor_Componentes_COP_Sin_IVA__c</field>
-            <value>
-                <elementReference>Valor_Componentes_COP_Sin_IVA</elementReference>
-            </value>
         </inputAssignments>
         <inputAssignments>
             <field>Valor_Componentes_EUR_Sin_IVA__c</field>
@@ -145,6 +145,28 @@
         <object>Cotizaci_n__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
+    <recordLookups>
+        <description>Elemento para obtener el Name (Folio) de la cotización creada con el flow.</description>
+        <name>Obtener_Name_Cotizacion_Creada</name>
+        <label>Obtener Name Cotización Creada</label>
+        <locationX>176</locationX>
+        <locationY>566</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Mensaje_de_exito</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Crea_Registro_Cotizacion</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Cotizaci_n__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <recordLookups>
         <name>Obtiene_Cotizacion_por_crear</name>
         <label>Obtiene Cotización por crear</label>
@@ -211,15 +233,19 @@
                     <dataType>Number</dataType>
                     <fieldText>Margen de la venta</fieldText>
                     <fieldType>InputField</fieldType>
-                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <inputsOnNextNavToAssocScrn>ResetValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
                     <scale>1</scale>
+                    <validationRule>
+                        <errorMessage>&lt;p&gt;&lt;span style=&quot;color: rgb(186, 5, 23); font-size: 12px; background-color: rgb(251, 243, 224);&quot;&gt;Margen de Venta: valor fuera del rango válido en campo porcentaje. Longitud 2 y 1 decimal.&lt;/span&gt;&lt;/p&gt;</errorMessage>
+                        <formulaExpression>VALUE(TEXT({!Margen_de_la_venta})) &lt;= 99.9</formulaExpression>
+                    </validationRule>
                 </fields>
                 <fields>
                     <name>Vigencia2</name>
                     <choiceReferences>Vigencia</choiceReferences>
                     <dataType>String</dataType>
-                    <fieldText>Vigencia2</fieldText>
+                    <fieldText>Vigencia</fieldText>
                     <fieldType>DropdownBox</fieldType>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
@@ -277,6 +303,10 @@
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
                     <scale>0</scale>
+                    <validationRule>
+                        <errorMessage>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Valor IVA Pesos (COP): valor fuera del rango válido en campo de tipo numérico: longitud 10 y 0 decimal.&lt;/span&gt;&lt;/p&gt;</errorMessage>
+                        <formulaExpression>LEN (TEXT({!IVA_Pesos_COP})) &lt;= 10</formulaExpression>
+                    </validationRule>
                 </fields>
                 <fields>
                     <name>TRM_COP</name>
@@ -289,6 +319,13 @@
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
                     <scale>0</scale>
+                    <validationRule>
+                        <errorMessage>&lt;p&gt;TRM COP: valor fuera del rango válido en campo de tipo numérico: longitud 15 y 0 decimal.&lt;/p&gt;</errorMessage>
+                        <formulaExpression>AND(
+    REGEX(TEXT({!TRM_COP}), &quot;^[0-9]{1,15}$&quot;),
+    {!TRM_COP} &lt;= 999999999999999
+)</formulaExpression>
+                    </validationRule>
                 </fields>
                 <inputParameters>
                     <name>width</name>
@@ -309,6 +346,10 @@
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
                     <scale>0</scale>
+                    <validationRule>
+                        <errorMessage>&lt;p&gt;Valor Componentes COP (Sin IVA): valor fuera del rango válido en campo de tipo numérico: longitud 15 y 0 decimal.&lt;/p&gt;</errorMessage>
+                        <formulaExpression>LEN(TEXT({!Valor_Componentes_COP_Sin_IVA}))&lt;=15</formulaExpression>
+                    </validationRule>
                 </fields>
                 <inputParameters>
                     <name>width</name>
@@ -343,6 +384,10 @@
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
                     <scale>0</scale>
+                    <validationRule>
+                        <errorMessage>&lt;p&gt;IVA Dólares (USD): valor fuera del rango válido en campo de tipo numérico: longitud 10 y 0 decimal.&lt;/p&gt;</errorMessage>
+                        <formulaExpression>LEN (TEXT({!IVA_D_lares_USD}))&lt;=10</formulaExpression>
+                    </validationRule>
                 </fields>
                 <fields>
                     <name>TRM_USD</name>
@@ -355,6 +400,13 @@
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
                     <scale>0</scale>
+                    <validationRule>
+                        <errorMessage>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;TRM USD: valor fuera del rango válido en campo de tipo numérico: longitud 15 y 0 decimal.&lt;/span&gt;&lt;/p&gt;</errorMessage>
+                        <formulaExpression>AND(
+    REGEX(TEXT({!TRM_USD}), &quot;^[0-9]{1,15}$&quot;),
+    {!TRM_USD} &lt;= 999999999999999
+)</formulaExpression>
+                    </validationRule>
                 </fields>
                 <inputParameters>
                     <name>width</name>
@@ -375,6 +427,10 @@
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
                     <scale>0</scale>
+                    <validationRule>
+                        <errorMessage>&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;Valor Componentes USD (Sin IVA): valor fuera del rango válido en campo de tipo numérico: longitud 15 y 0 decimal.&lt;/span&gt;&lt;/p&gt;</errorMessage>
+                        <formulaExpression>LEN(TEXT({!Valor_Componentes_USD_Sin_IVA}))&lt;=15</formulaExpression>
+                    </validationRule>
                 </fields>
                 <inputParameters>
                     <name>width</name>
@@ -409,6 +465,10 @@
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
                     <scale>0</scale>
+                    <validationRule>
+                        <errorMessage>&lt;p&gt;IVA Euros (EUR): valor fuera del rango válido en campo de tipo numérico: longitud 10 y 0 decimal.&lt;/p&gt;</errorMessage>
+                        <formulaExpression>LEN(TEXT({!IVA_Euros_EUR}))&lt;=10</formulaExpression>
+                    </validationRule>
                 </fields>
                 <fields>
                     <name>TRM_EUR</name>
@@ -421,6 +481,13 @@
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
                     <scale>0</scale>
+                    <validationRule>
+                        <errorMessage>&lt;p&gt;TRM (EUR): valor fuera del rango válido en campo de tipo numérico: longitud 15 y 0 decimal.&lt;/p&gt;</errorMessage>
+                        <formulaExpression>AND(
+    REGEX(TEXT({!TRM_EUR}), &quot;^[0-9]{1,15}$&quot;),
+    {!TRM_EUR} &lt;= 999999999999999
+)</formulaExpression>
+                    </validationRule>
                 </fields>
                 <inputParameters>
                     <name>width</name>
@@ -441,6 +508,10 @@
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>false</isRequired>
                     <scale>0</scale>
+                    <validationRule>
+                        <errorMessage>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Valor Componentes EUR (Sin IVA): valor fuera del rango válido en campo de tipo numérico: longitud 15 y 0 decimal.&lt;/span&gt;&lt;/p&gt;</errorMessage>
+                        <formulaExpression>LEN(TEXT({!Valor_Componentes_EUR_Sin_IVA}))&lt;=15</formulaExpression>
+                    </validationRule>
                 </fields>
                 <inputParameters>
                     <name>width</name>
@@ -457,6 +528,23 @@
         <showFooter>true</showFooter>
         <showHeader>false</showHeader>
     </screens>
+    <screens>
+        <description>Muestra mensaje de creación de cotización creada correctamente y con el número del consecutivo creado.</description>
+        <name>Mensaje_de_exito</name>
+        <label>Mensaje de éxito</label>
+        <locationX>176</locationX>
+        <locationY>674</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>MensajeExito</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-size: 14px; color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;Se &lt;/span&gt;&lt;span style=&quot;font-size: 14px; font-family: var(--lwc-fontFamily,-apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Roboto, Helvetica, Arial, sans-serif, &apos;Apple Color Emoji&apos;, &apos;Segoe UI Emoji&apos;, &apos;Segoe UI Symbol&apos;);&quot;&gt;ha creado una nueva cotizaciòn con éxito. Cotización No.:  &lt;/span&gt;&lt;strong style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255); font-size: 14px;&quot;&gt;{!Obtener_Name_Cotizacion_Creada.Name}&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;font-size: 12px; color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;Clic &lt;/strong&gt;&lt;a href=&quot;/{!Crea_Registro_Cotizacion}&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot; style=&quot;font-size: 12px; color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;&lt;strong&gt;Aquí&lt;/strong&gt;&lt;/a&gt;&lt;strong style=&quot;font-size: 12px; color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt; para abrir el registro.&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
     <start>
         <locationX>50</locationX>
         <locationY>0</locationY>
@@ -464,7 +552,24 @@
             <targetReference>Obtiene_Oportunidad</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
+    <variables>
+        <name>ObjetoCotizacion</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Cotizaci_n__c</objectType>
+    </variables>
+    <variables>
+        <description>Variable que me permite obtener el dato del campo Name del objeto cotizaciones.</description>
+        <name>ObtenerName</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Cotizaci_n__c</objectType>
+    </variables>
     <variables>
         <name>recordId</name>
         <dataType>String</dataType>

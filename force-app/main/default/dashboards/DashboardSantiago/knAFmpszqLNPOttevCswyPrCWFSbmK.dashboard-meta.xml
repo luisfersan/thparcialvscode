@@ -10,11 +10,11 @@
     <dashboardFilters>
         <dashboardFilterOptions>
             <operator>lessOrEqual</operator>
-            <values>9/30/2024</values>
+            <values>2/28/2025</values>
         </dashboardFilterOptions>
         <dashboardFilterOptions>
-            <operator>lessOrEqual</operator>
-            <values>10/31/2024</values>
+            <operator>equals</operator>
+            <values>3/31/2025</values>
         </dashboardFilterOptions>
         <name>Fecha de Ofertada</name>
     </dashboardFilters>

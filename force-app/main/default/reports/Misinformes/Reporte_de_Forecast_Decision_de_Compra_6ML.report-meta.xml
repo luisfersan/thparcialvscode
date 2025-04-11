@@ -49,6 +49,7 @@
             <operator>equals</operator>
             <value>Calificada Compra,Generada Compra,Identificada Compra,Ofertada Compra,Pre Cierre</value>
         </criteriaItems>
+        <language>es</language>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>

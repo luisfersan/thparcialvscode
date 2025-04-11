@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <excludeButtons>OpenSlackRecordChannel</excludeButtons>
     <feedLayout>
         <autocollapsePublisher>true</autocollapsePublisher>
         <compactFeed>true</compactFeed>
@@ -487,12 +486,6 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <fields>Estado_Cotizaci_n__c</fields>
-        <fields>Fecha_de_Vencimiento__c</fields>
-        <fields>Ingeniero_de_Ofertas__c</fields>
-        <fields>Vigencia__c</fields>
-        <fields>CURRENCY_ISO_CODE</fields>
-        <fields>Sincronizar_Cotizaci_n__c</fields>
         <relatedList>Cotizaci_n__c.Nombre_del_Proyecto__c</relatedList>
     </relatedLists>
     <relatedObjects>AccountId</relatedObjects>

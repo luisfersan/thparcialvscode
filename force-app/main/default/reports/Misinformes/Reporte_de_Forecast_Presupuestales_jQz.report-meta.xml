@@ -52,6 +52,7 @@
             <operator>equals</operator>
             <value>Calificada Presupuestal,Generada Presupuestal,Identificada Presupuestal,Ofertada Presupuestal,Pre Cierre</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>

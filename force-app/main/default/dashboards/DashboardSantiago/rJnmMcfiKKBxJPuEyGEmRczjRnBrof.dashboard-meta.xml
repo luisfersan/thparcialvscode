@@ -16,6 +16,10 @@
             <operator>lessOrEqual</operator>
             <values>2/28/2025</values>
         </dashboardFilterOptions>
+        <dashboardFilterOptions>
+            <operator>lessOrEqual</operator>
+            <values>3/31/2025</values>
+        </dashboardFilterOptions>
         <name>Fecha de cierre</name>
     </dashboardFilters>
     <dashboardGridLayout>

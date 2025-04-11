@@ -12,6 +12,8 @@
     <tabs>Hoja_de_Calificaci_n_An_lisis_Financiero__c</tabs>
     <tabs>Hoja_de_Calificaci_n__c</tabs>
     <tabs>Cotizaci_n__c</tabs>
+    <tabs>Categoria__c</tabs>
+    <tabs>Escalafon__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningBolt_UtilityBar</utilityBar>
 </CustomApplication>

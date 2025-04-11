@@ -8,5 +8,5 @@
     <columns>CREATED_DATE</columns>
     <columns>Valor_Total_Cotizaci_n_Pesos__c</columns>
     <filterScope>Everything</filterScope>
-    <label>All</label>
+    <label>Todas las Cotizaciones</label>
 </ListView>

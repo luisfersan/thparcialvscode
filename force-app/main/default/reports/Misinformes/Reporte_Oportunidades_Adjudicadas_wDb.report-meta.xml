@@ -26,6 +26,9 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
+        <field>ACCOUNT_NAME</field>
+    </columns>
+    <columns>
         <field>OPPORTUNITY_NAME</field>
     </columns>
     <columns>
@@ -41,6 +44,7 @@
             <operator>equals</operator>
             <value>Adjudicada - Compra,Adjudicada - Presupuestal</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>

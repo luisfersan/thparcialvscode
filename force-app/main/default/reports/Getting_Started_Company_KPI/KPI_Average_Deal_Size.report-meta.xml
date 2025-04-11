@@ -70,6 +70,7 @@
             <operator>equals</operator>
             <value>Cliente Existente,Cliente Nuevo,Renting</value>
         </criteriaItems>
+        <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>

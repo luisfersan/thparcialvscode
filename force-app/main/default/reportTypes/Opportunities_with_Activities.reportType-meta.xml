@@ -140,6 +140,16 @@
             <field>LastActivityDate</field>
             <table>Opportunity</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IDCategoria__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Categoria__c</field>
+            <table>Opportunity</table>
+        </columns>
         <masterLabel>Opportunities</masterLabel>
     </sections>
     <sections>
@@ -319,5 +329,8 @@
             <table>Opportunity.Activities</table>
         </columns>
         <masterLabel>Activities</masterLabel>
+    </sections>
+    <sections>
+        <masterLabel>Oportunidades</masterLabel>
     </sections>
 </ReportType>

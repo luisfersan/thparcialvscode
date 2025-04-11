@@ -296,22 +296,33 @@
             <rowSpan>1</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
-            <colSpan>2</colSpan>
+            <colSpan>12</colSpan>
             <columnIndex>0</columnIndex>
             <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-                <componentType>RichText</componentType>
-                <dashboardComponentContents>
-                    <richTextContent>[{\&amp;quot;attributes\&amp;quot;:{\&amp;quot;color\&amp;quot;:\&amp;quot;#ffffff\&amp;quot;},\&amp;quot;insert\&amp;quot;:\&amp;quot;.\&amp;quot;},{\&amp;quot;attributes\&amp;quot;:{\&amp;quot;align\&amp;quot;:\&amp;quot;left\&amp;quot;},\&amp;quot;insert\&amp;quot;:\&amp;quot;\\n\&amp;quot;}]</richTextContent>
-                </dashboardComponentContents>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <column>Opportunity.Valor_Sin_IVA_Pesos__c.CONVERT</column>
+                </chartSummary>
+                <componentType>Metric</componentType>
+                <decimalPrecision>0</decimalPrecision>
+                <displayUnits>Millions</displayUnits>
                 <groupingSortProperties/>
+                <header>Forecast 90D Ofertas Compra Miller</header>
+                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
+                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
+                <indicatorHighColor>#00716B</indicatorHighColor>
+                <indicatorLowColor>#C23934</indicatorLowColor>
+                <indicatorMiddleColor>#CA8501</indicatorMiddleColor>
+                <report>Misinformes/Forecast_90D_Ofertas_Compra_Miller_mdO</report>
+                <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>24</rowIndex>
-            <rowSpan>5</rowSpan>
+            <rowSpan>4</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
-            <colSpan>5</colSpan>
-            <columnIndex>2</columnIndex>
+            <colSpan>3</colSpan>
+            <columnIndex>0</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
@@ -348,12 +359,50 @@
                 <sortLegendValues>false</sortLegendValues>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>24</rowIndex>
-            <rowSpan>10</rowSpan>
+            <rowIndex>28</rowIndex>
+            <rowSpan>11</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
-            <colSpan>5</colSpan>
-            <columnIndex>7</columnIndex>
+            <colSpan>3</colSpan>
+            <columnIndex>3</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>Opportunity.Valor_Sin_IVA_Pesos__c.CONVERT</column>
+                </chartSummary>
+                <componentType>Bar</componentType>
+                <decimalPrecision>-1</decimalPrecision>
+                <displayUnits>Millions</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>Opportunity.Tipo_de_Oferta__c</groupingColumn>
+                <groupingSortProperties>
+                    <groupingSorts>
+                        <groupingLevel>g1</groupingLevel>
+                        <sortOrder>a</sortOrder>
+                    </groupingSorts>
+                </groupingSortProperties>
+                <header>Forecast 90D Ofertas Compra Miller</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>Misinformes/Forecast_90D_Ofertas_Compra_Miller_mdO</report>
+                <showPercentage>false</showPercentage>
+                <showPicturesOnCharts>false</showPicturesOnCharts>
+                <showValues>true</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <sortLegendValues>true</sortLegendValues>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>28</rowIndex>
+            <rowSpan>11</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>6</colSpan>
+            <columnIndex>6</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <componentType>FlexTable</componentType>
@@ -372,12 +421,18 @@
                         <type>detail</type>
                     </flexTableColumn>
                     <flexTableColumn>
-                        <breakPoint1>33.0</breakPoint1>
-                        <breakPoint2>67.0</breakPoint2>
+                        <reportColumn>Opportunity.Tipo_de_Oferta__c</reportColumn>
+                        <showSubTotal>false</showSubTotal>
+                        <showTotal>true</showTotal>
+                        <type>detail</type>
+                    </flexTableColumn>
+                    <flexTableColumn>
+                        <breakPoint1>5.0E8</breakPoint1>
+                        <breakPoint2>3.0E9</breakPoint2>
                         <breakPointOrder>0</breakPointOrder>
                         <highRangeColor>29035</highRangeColor>
-                        <lowRangeColor>12728628</lowRangeColor>
-                        <midRangeColor>13272321</midRangeColor>
+                        <lowRangeColor>14490131</lowRangeColor>
+                        <midRangeColor>15047184</midRangeColor>
                         <reportColumn>Opportunity.Valor_Sin_IVA_Pesos__c.CONVERT</reportColumn>
                         <showSubTotal>false</showSubTotal>
                         <showTotal>true</showTotal>
@@ -393,33 +448,8 @@
                 <header>Forecast 90D Ofertas Compra Miller</header>
                 <report>Misinformes/Forecast_90D_Ofertas_Compra_Miller_mdO</report>
             </dashboardComponent>
-            <rowIndex>24</rowIndex>
-            <rowSpan>10</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>2</colSpan>
-            <columnIndex>0</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartSummary>
-                    <aggregate>Sum</aggregate>
-                    <column>Opportunity.Valor_Sin_IVA_Pesos__c.CONVERT</column>
-                </chartSummary>
-                <componentType>Metric</componentType>
-                <decimalPrecision>0</decimalPrecision>
-                <displayUnits>Millions</displayUnits>
-                <groupingSortProperties/>
-                <header>Forecast 90D Ofertas Compra Miller</header>
-                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
-                <indicatorHighColor>#00716B</indicatorHighColor>
-                <indicatorLowColor>#C23934</indicatorLowColor>
-                <indicatorMiddleColor>#CA8501</indicatorMiddleColor>
-                <report>Misinformes/Forecast_90D_Ofertas_Compra_Miller_mdO</report>
-                <showRange>false</showRange>
-            </dashboardComponent>
-            <rowIndex>29</rowIndex>
-            <rowSpan>5</rowSpan>
+            <rowIndex>28</rowIndex>
+            <rowSpan>11</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>12</colSpan>
@@ -432,7 +462,7 @@
                 </dashboardComponentContents>
                 <groupingSortProperties/>
             </dashboardComponent>
-            <rowIndex>34</rowIndex>
+            <rowIndex>39</rowIndex>
             <rowSpan>1</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -463,7 +493,7 @@
                 <showTotal>true</showTotal>
                 <showValues>false</showValues>
             </dashboardComponent>
-            <rowIndex>35</rowIndex>
+            <rowIndex>40</rowIndex>
             <rowSpan>8</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -500,7 +530,7 @@
                 <sortLegendValues>false</sortLegendValues>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>35</rowIndex>
+            <rowIndex>40</rowIndex>
             <rowSpan>8</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -537,7 +567,7 @@
                 <sortLegendValues>false</sortLegendValues>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>35</rowIndex>
+            <rowIndex>40</rowIndex>
             <rowSpan>8</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -575,7 +605,7 @@
                 <sortLegendValues>false</sortLegendValues>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>43</rowIndex>
+            <rowIndex>48</rowIndex>
             <rowSpan>8</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -612,7 +642,7 @@
                 <sortLegendValues>false</sortLegendValues>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>43</rowIndex>
+            <rowIndex>48</rowIndex>
             <rowSpan>8</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -636,7 +666,7 @@
                 <report>Misinformes/Average_Deal_Size_Miller_0Bi</report>
                 <showRange>false</showRange>
             </dashboardComponent>
-            <rowIndex>43</rowIndex>
+            <rowIndex>48</rowIndex>
             <rowSpan>4</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -650,7 +680,7 @@
                 </dashboardComponentContents>
                 <groupingSortProperties/>
             </dashboardComponent>
-            <rowIndex>51</rowIndex>
+            <rowIndex>56</rowIndex>
             <rowSpan>1</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -687,7 +717,7 @@
                 <sortLegendValues>false</sortLegendValues>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>52</rowIndex>
+            <rowIndex>57</rowIndex>
             <rowSpan>9</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -724,7 +754,7 @@
                 <sortLegendValues>false</sortLegendValues>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>52</rowIndex>
+            <rowIndex>57</rowIndex>
             <rowSpan>9</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
@@ -775,7 +805,7 @@
                 <header>Ofertas para Compra Perdida - Miller</header>
                 <report>Misinformes/Ofertas_para_Compra_Perdida_Miller_Hp8</report>
             </dashboardComponent>
-            <rowIndex>52</rowIndex>
+            <rowIndex>57</rowIndex>
             <rowSpan>9</rowSpan>
         </dashboardGridComponents>
         <numberOfColumns>12</numberOfColumns>
